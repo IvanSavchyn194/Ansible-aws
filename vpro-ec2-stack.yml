@@ -5,4 +5,4 @@
   gather_facts: False
   tasks:
     - name: Import VPC setup Variable
-      include_vars: vars/vpc_output_vars
+      include_vars: vars/vpc-output_vars
