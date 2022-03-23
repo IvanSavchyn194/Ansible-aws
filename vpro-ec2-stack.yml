@@ -65,6 +65,7 @@
         rules:
           - proto: all
             group_id: "{{vproStackSG_out.group_id}}"
+            
     - name: Create Nginx web1
       ec2_instance:
         key_name: vprokey
@@ -246,4 +247,3 @@
           ansible_user=ubuntu
           ansible_ssh_provate_key_file=loginkey_vpro.pem
           #ansible_python_interpreter=/user/bin/python3
-          
